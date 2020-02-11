@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>All comments</title>
+    <script src="https://kit.fontawesome.com/3387f41f9e.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
 </head>
@@ -20,8 +21,13 @@
         <div class="commentContainer">
             <% allTodos.forEach( (todo)=> { %>
             <div class="commentContainerInner">
-                <div class="div1_inner2"><p><strong><%= todo.title %></p></strong></div>
-                <div class="deleteButton"><a class="updateButton" href="/update/<%= todo._id %>">Ändra</a><a class="updateButton" href="/delete/<%= todo._id %>">Klar</a></div>
+                <div class="div1_inner">
+                    <p><strong><%= todo.title %></p></strong>
+                </div>
+                <div class="deleteButton">
+                    <a class="updateButton" href="/update/<%= todo._id %>"><i class="far fa-edit"></i></a>
+                    <a class="updateButton" href="/delete/<%= todo._id %>"><i class="far fa-check-square"></i></a>
+                </div>
             </div>
         <% }) %>
         </div>

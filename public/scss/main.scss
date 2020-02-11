@@ -29,6 +29,20 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 
+    a {
+        color: black;
+    }
+
+    input {
+        margin: 12px 0;
+        padding: 4px;
+        min-width: 200px;
+    }
+
+    .editForm {
+        width: 100%;
+    }
+
     .commentContainer, .formContainer {
         width: 100%;
         display: flex;
@@ -36,28 +50,34 @@ body {
         flex-wrap: wrap;
 
         .commentContainerInner {
-            position: relative;
+            display: flex;
+            justify-content: space-between;
             width: 100%;
             margin-bottom: 20px;
             border: 1px solid grey;
             padding: 10px;
 
             .deleteButton {
-                position: absolute;
-                right: 10px;
                 height: 100%;
                 top: 0;
                 display: flex;
                 align-items: center;
 
-                a {
-                    text-decoration: none;
+                .fa-edit {
+                    font-size: 20px;
+                    color: rgb(109, 70, 70);
+                }
+                .fa-check-square {
+                    font-size: 20px;
+                    padding: 1px 0;
+                    color: green;
+                }
+                .inactive {
+                    color: grey;
                 }
 
                 .updateButton {
                 margin: 0 10px 0 30px;
-                text-decoration: none;
-                font-size: 80%;
                 }
             }
         }
