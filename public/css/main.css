@@ -21,7 +21,6 @@ body {
   height: 45%; }
 
 .listBody {
-  border: 1px solid black;
   padding: 20px;
   width: 60%;
   display: flex;
@@ -48,6 +47,6 @@ body {
         .listBody .commentContainer .commentContainerInner .deleteButton a, .listBody .formContainer .commentContainerInner .deleteButton a {
           text-decoration: none; }
         .listBody .commentContainer .commentContainerInner .deleteButton .updateButton, .listBody .formContainer .commentContainerInner .deleteButton .updateButton {
-          margin-right: 40px;
+          margin: 0 10px 0 30px;
           text-decoration: none;
           font-size: 80%; }
