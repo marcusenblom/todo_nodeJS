@@ -1,0 +1,53 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif; }
+
+.header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid #f0f0f0;
+  margin: 0 0 100px 0; }
+
+.header img {
+  height: 45%; }
+
+.listBody {
+  border: 1px solid black;
+  padding: 20px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .listBody .commentContainer, .listBody .formContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .listBody .commentContainer .commentContainerInner, .listBody .formContainer .commentContainerInner {
+      position: relative;
+      width: 100%;
+      margin-bottom: 20px;
+      border: 1px solid grey;
+      padding: 10px; }
+      .listBody .commentContainer .commentContainerInner .deleteButton, .listBody .formContainer .commentContainerInner .deleteButton {
+        position: absolute;
+        right: 10px;
+        height: 100%;
+        top: 0;
+        display: flex;
+        align-items: center; }
+        .listBody .commentContainer .commentContainerInner .deleteButton a, .listBody .formContainer .commentContainerInner .deleteButton a {
+          text-decoration: none; }
+        .listBody .commentContainer .commentContainerInner .deleteButton .updateButton, .listBody .formContainer .commentContainerInner .deleteButton .updateButton {
+          margin-right: 40px;
+          text-decoration: none;
+          font-size: 80%; }
