@@ -22,8 +22,6 @@ router.post("/todos", async (req, res) => {
         }
     })
 
-    // const allTodos = await Todo.find();       // Model name + .find() will find all objects within that model
-    // res.render("todos", {allTodos})
     res.redirect("/todos");
     
 })
@@ -31,7 +29,7 @@ router.post("/todos", async (req, res) => {
 // UPDATE TODO
 router.get("/update/:id", async (req, res) => {
 
-    const todoToUpdate = await Todo.findById({_id: req.params.id});   // todoToUpdate = object containing a todo found by ID
+    const todoToUpdate = await Todo.findById({_id: req.params.id});   // todoToUpdate = object containing a todo found by ID. "req.params.id" matches "/update/:id". :id must be same as .id
     res.render("edit", {todoToUpdate})
 });
 router.post("/update/:id", async (req, res) => {
