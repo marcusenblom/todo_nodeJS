@@ -55,6 +55,7 @@ body {
             width: 100%;
             margin-bottom: 20px;
             border: 1px solid grey;
+            border-radius: 5px;
             padding: 10px;
 
             .deleteButton {
@@ -72,6 +73,7 @@ body {
                     padding: 1px 0;
                     color: green;
                 }
+                
                 .inactive {
                     color: grey;
                 }

@@ -1,0 +1,65 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif; }
+
+.header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid #f0f0f0;
+  margin: 0 0 100px 0; }
+
+.header img {
+  height: 45%; }
+
+.listBody {
+  padding: 20px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .listBody a {
+    color: black; }
+  .listBody input {
+    margin: 12px 0;
+    padding: 4px;
+    min-width: 200px; }
+  .listBody .editForm {
+    width: 100%; }
+  .listBody .commentContainer, .listBody .formContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .listBody .commentContainer .commentContainerInner, .listBody .formContainer .commentContainerInner {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 20px;
+      border: 1px solid grey;
+      border-radius: 5px;
+      padding: 10px; }
+      .listBody .commentContainer .commentContainerInner .deleteButton, .listBody .formContainer .commentContainerInner .deleteButton {
+        height: 100%;
+        top: 0;
+        display: flex;
+        align-items: center; }
+        .listBody .commentContainer .commentContainerInner .deleteButton .fa-edit, .listBody .formContainer .commentContainerInner .deleteButton .fa-edit {
+          font-size: 20px;
+          color: #6d4646; }
+        .listBody .commentContainer .commentContainerInner .deleteButton .fa-check-square, .listBody .formContainer .commentContainerInner .deleteButton .fa-check-square {
+          font-size: 20px;
+          padding: 1px 0;
+          color: green; }
+        .listBody .commentContainer .commentContainerInner .deleteButton .inactive, .listBody .formContainer .commentContainerInner .deleteButton .inactive {
+          color: grey; }
+        .listBody .commentContainer .commentContainerInner .deleteButton .updateButton, .listBody .formContainer .commentContainerInner .deleteButton .updateButton {
+          margin: 0 10px 0 30px; }
