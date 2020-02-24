@@ -45,7 +45,8 @@ body {
       width: 100%;
       margin-bottom: 20px;
       border: 1px solid grey;
-      padding: 10px; }
+      padding: 10px;
+      border-radius: 3px; }
       .listBody .commentContainer .commentContainerInner .deleteButton, .listBody .formContainer .commentContainerInner .deleteButton {
         height: 100%;
         top: 0;
