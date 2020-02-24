@@ -11,8 +11,6 @@ app.use(express.static(path.join(__dirname, "public")));       // In order to ma
 app.set("views", "views"); // What folder to look in. Views folder (2nd) can be named to anything
 app.set("view engine", "ejs"); // Describe what Express will find/use in the above folder
 
-// Middleware
-
 // Router
 app.use(router);
 
