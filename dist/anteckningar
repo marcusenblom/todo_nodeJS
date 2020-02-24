@@ -1,0 +1,47 @@
+- Express
+Server, router, controllers
+
+- EJS
+Views
+
+- Mongoose
+Database
+
+
+Filstruktur (MVC):
+- Views
+- router
+- Model
+
+Börja med DB
+
+
+---- 4 feb ----
+
+.get(/products/:id) = :id is a request parameter
+
+res.render("comments.ejs", {allComments}) vs res.redirect("/comments.ejs", {allComments})
+- Do not use / for render. Use / for redirect
+
+
+// Finding documents
+ 
+//We can find all our documents (Products) with a command like below.
+ Product.find({})
+ 
+//Find a document based on id
+Product.findOne({ name: “nike” })
+//Updating
+ 
+//Update a single document
+Product.updateOne({ name: 'nike' });
+ 
+//Update multiple documents
+Product.updateMany({ name: 'nike' }, { price: 500 });
+//Delete Documents
+ 
+//Delete a single document-
+Product.deleteOne({ name: 'nike' });
+ 
+//Delete multiple documents
+Product.deleteMany({ price: { $gte: 1000 } });
