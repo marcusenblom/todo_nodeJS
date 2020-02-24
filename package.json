@@ -11,17 +11,17 @@
   "author": "Blomman",
   "license": "ISC",
   "dependencies": {
+    "braces": "^2.3.2",
     "dateformat": "^3.0.3",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
     "moment": "^2.24.0",
     "mongojs": "^2.6.0",
-    "mongoose": "^5.8.10"
+    "mongoose": "^5.9.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
-    "rimraf": "^3.0.2",
-    "braces": ">=2.3.1"
+    "rimraf": "^3.0.2"
   }
 }
